@@ -17,7 +17,7 @@ pipeline{
 
         stage("Checkout from SCM") {
             steps {
-                git branch: 'main', credentialsId: 'github-pat', url: 'https://github.com/imannovv/gitops-devops-pipeline-practice'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/imannovv/gitops-devops-pipeline-practice'
             }
         }
 
