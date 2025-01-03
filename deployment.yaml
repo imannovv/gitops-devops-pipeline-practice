@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-pipeline-app
-          image: imannovv/devops-pipeline-practice:1.0.0-8
+          image: imannovv/devops-pipeline-practice:1.0.0-13
           resources:
             limits:
               memory: "256Mi"
