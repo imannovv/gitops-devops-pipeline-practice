@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: devops-pipeline-practice-deployment
+  name: devops-pipeline-practice:1.0.0-12
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: devops-pipeline-practice-app
+      app: devops-pipeline-practice:1.0.0-12
   template:
     metadata:
       labels:
-        app: devops-pipeline-practice-app
+        app: devops-pipeline-practice:1.0.0-12
     spec:
       containers:
-        - name: devops-pipeline-practice-app
-          image: imannovv/devops-pipeline-practice:1.0.0-8
+        - name: devops-pipeline-practice:1.0.0-12
+          image: imannovv/devops-pipeline-practice:1.0.0-12
           resources:
             limits:
               memory: "256Mi"
